@@ -9,6 +9,8 @@ const colorValue = document.querySelector('.color');
 const body = document.querySelector('.widget').parentNode;
 
 changeColorBtn.addEventListener('click', () => {
-  body.style.backgroundColor = getRandomHexColor();
-  colorValue.textContent = getRandomHexColor();
+  const hexColor = getRandomHexColor();
+  body.style.backgroundColor = hexColor;
+  colorValue.textContent = hexColor;
+  console.log(hexColor);
 });
