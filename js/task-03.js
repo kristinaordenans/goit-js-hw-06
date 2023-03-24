@@ -25,7 +25,7 @@ const listEl = document.querySelector(".gallery");
 // });
 // listEl.append(...listGallery);
 
-const gallery = images.map(({url, alt}) => `<li class = "list-item"><img class = "image" scr = '${url}' alt = '${alt}'></li>`).join("");
+const gallery = images.map(({url, alt}) => `<li class = "list-item"><img class = "image" src = '${url}' alt = '${alt}'></li>`).join("");
 listEl.insertAdjacentHTML("afterbegin", gallery);
 
 
